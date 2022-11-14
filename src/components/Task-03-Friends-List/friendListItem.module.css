@@ -27,8 +27,8 @@
 }
 
 .active {
-    background-color: green;
     composes: status;
+    background-color: green;
 }
 
 .name {
