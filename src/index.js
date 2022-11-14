@@ -1,18 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { App } from 'components/App';
 import './index.css';
 
-import user from './components/zad1Profile/user.json';
-import data from './components/zad2Statistic/data.json';
-import friends from './components/zad3Friends/friends.json';
-import transactions from './components/zad4Transaction/transactions.json';
+import { Profile } from 'components/profile/Profile';
+import user from './components/profile/user.json';
 
-import { App } from 'components/App';
-import { Profile } from './components/zad1Profile/Profile';
-import { Statistics } from './components/zad2Statistic/Statistic';
-import { FriendList } from './components/zad3Friends/FriendsList';
-import { TransactionHistory } from './components/zad4Transaction/Transaction';
+import { Statistics } from 'components/statistics/Statistics';
+import data from './components/statistics/data.json';
 
+import { FriendList } from 'components/friend-list/FriendList';
+import friends from './components/friend-list/friends.json';
+
+import { TransactionHistory } from 'components/transaction-history/TransactionHistory';
+import transactions from './components/transaction-history/transactions.json';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -25,6 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
+      <Statistics stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </App>
