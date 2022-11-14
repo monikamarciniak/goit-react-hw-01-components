@@ -15,8 +15,7 @@ export const Stats = ({ title, stats }) => {
                 <li
                     className={StatsCSS.item}
                     key={id}
-                    style={{
-              backgroundColor: getRandomHexColor(),
+                    style={{ backgroundColor: getRandomHexColor(),
             }}
             
                 >
