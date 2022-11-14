@@ -1,0 +1,7 @@
+.friendList {
+    margin: 0 auto;
+    width: 400px;
+    list-style-type: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 1px rgba(185, 185, 185, 1);
+}
