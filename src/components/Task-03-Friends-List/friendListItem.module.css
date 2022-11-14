@@ -28,6 +28,7 @@
 
 .active {
     background-color: green;
+    composes: status;
 }
 
 .name {
